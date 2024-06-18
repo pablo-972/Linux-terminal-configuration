@@ -1,0 +1,43 @@
+[window]
+    decorations = "Full"
+    opacity = 0.95
+    dynamic_title = true
+    decorations_theme_variant = "None"
+    class = { instance="Alacritty", general="Alacritty" }
+    dimensions = { columns = 200, lines = 50 }
+    position = { x = 200, y = 70 }
+
+[font]
+    normal = { family="HackNerdFont", style="Regular" }
+    bold = { family="HackNerdFont", style="Bold" }
+    size = 14
+
+[colors]
+    # Special
+    primary = { foreground = "#a9b1d6", background = "#1a1b26" }
+
+    # Normal colors
+    normal = { black = "#414868", red = "#f7768e", green = "#73daca", yellow = "#e0af68", blue = "#7aa2f7", magenta = "#bb9af7", cyan = "#7dcfff", white = "#a1b1d6" }
+
+    # Bright colors
+    bright = { black = "#414868", red = "#f7768e", green = "#73daca", yellow = "#e0af68", blue = "#7aa2f7", magenta = "#bb9af7", cyan = "#7dcfff", white = "#c0caf5" }
+
+    # Cursor
+    cursor = { text = "#1a1b26", cursor = "#c0caf5" }
+
+    # Selection highlight
+    selection = { text = "#7aa2f7", background = "#2b344a" }
+
+[selection]
+    save_to_clipboard=true
+
+[cursor]
+    style={shape="Beam", blinking="Always"}
+    blink_interval=450
+
+[scrolling]
+    history = 10000
+
+[shell]
+    program = '/bin/zsh'
+    args = ["-l", "-c", "tmux attach || tmux"]
