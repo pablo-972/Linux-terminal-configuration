@@ -56,5 +56,7 @@ alias grep='grep --color=auto'
 alias ls='lsd'
 source ~/.powerlevel10k/powerlevel10k.zsh-theme
 
+export PATH=$PATH:/usr/sbin
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
